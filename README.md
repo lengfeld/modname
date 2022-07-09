@@ -98,8 +98,3 @@ Add install Makefile target
 debian/ubuntu package and gentoo ebuild
 
 Support arguments like `-v/--version` and `-h/--help`.
-
-
-## Links to GNU readline documentation
-
-https://tiswww.case.edu/php/chet/readline/readline.html#IDX325
