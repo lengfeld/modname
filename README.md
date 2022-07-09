@@ -63,7 +63,7 @@ Execute
 
 # Homepage and repo
 
-There is a [projects homepage](https://stefan.lengfeld.xyz/project/modname/).
+There is a [projects homepage](https://stefan.lengfeld.xyz/projects/modname/).
 
 To get the source code of the project, execute
 
