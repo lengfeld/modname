@@ -73,8 +73,11 @@ To get the source code of the project, execute
 
 ## License
 
-This program is licensed under GPLv2-only.
+This program is licensed under GPLv2-only. See the file
+[LICENSE.txt](LICENSE.txt) or the Free Software Foundation website:
+[GNU General Public License, version 2][fsf]
 
+[fsf]: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 ## Learnings
 
