@@ -17,7 +17,7 @@ The name `modname` is a short variant of "modify name".
 [readline]: https://tiswww.case.edu/php/chet/readline/rltop.html
 
 
-# Usage:
+## Usage:
 
 Example console capture:
 
@@ -37,7 +37,8 @@ file. Then the console screen may look like
     $ ls
     fileY
 
-# How to build
+
+## How to build
 
 Ensure that you have the library and headers for GNU readline installed.
 Then just execute
@@ -48,20 +49,20 @@ The binary `modname` is build directly in the current/root directory of the
 project.
 
 
-# How to install
+## How to install
 
 There is currently no install target. Just copy the binary `modname` into a
 folder that is also in your `PATH` environment variable.
 
 
-# How to test
+## How to test
 
 Execute
 
     $ make && ./test.py
     $ make modnametest && ./modnametest
 
-# Homepage and repo
+## Homepage and repo
 
 There is a [projects homepage](https://stefan.lengfeld.xyz/projects/modname/).
 
@@ -70,12 +71,12 @@ To get the source code of the project, execute
     $ git clone https://github.com/lengfeld/modname
 
 
-# License
+## License
 
 This program is licensed under GPLv2-only.
 
 
-# Learnings
+## Learnings
 
 Bootstrap your test infrastructure as early as possible.
 
@@ -84,7 +85,7 @@ Use a code formatter. I don't want to format/indent my code manually.
 Use C variable attribute cleanup to avoid memory leaks and coding mistakes.
 
 
-# TODOs
+## TODOs
 
 Enable sanitziers for test binarys.
 
@@ -99,6 +100,6 @@ debian/ubuntu package and gentoo ebuild
 Support arguments like `-v/--version` and `-h/--help`.
 
 
-# Links to GNU readline documentation
+## Links to GNU readline documentation
 
 https://tiswww.case.edu/php/chet/readline/readline.html#IDX325
