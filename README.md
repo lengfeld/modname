@@ -62,13 +62,16 @@ Execute
     $ make && ./test.py
     $ make modnametest && ./modnametest
 
+
 ## Homepage and repo
 
 There is a [projects homepage](https://stefan.lengfeld.xyz/projects/modname/).
 
-To get the source code of the project, execute
+The source code repo is on [github]. To clone the repo, execute
 
     $ git clone https://github.com/lengfeld/modname
+
+[github]: https://github.com/lengfeld/modname
 
 
 ## License
@@ -78,6 +81,7 @@ This program is licensed under GPLv2-only. See the file
 [GNU General Public License, version 2][fsf]
 
 [fsf]: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+
 
 ## Learnings
 
