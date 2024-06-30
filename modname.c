@@ -121,9 +121,10 @@ static inline void freep(void *p) {
 #define _cleanup_free_ __attribute__((__cleanup__(freep)))
 
 int interactive_rename(const char *ro_oldpath) {
-	int ret;
-
 	_cleanup_free_ char *oldpath = strdup(ro_oldpath);
+	_cleanup_free_ char *newpath = NULL;
+	_cleanup_free_ char *newfilename = NULL;
+	int ret;
 	ASSERT(oldpath != NULL);
 
 	// Remove trailing slashes
@@ -153,7 +154,6 @@ int interactive_rename(const char *ro_oldpath) {
 	}
 
 	// Display prompt with old filename and read new filename back.
-	_cleanup_free_ char *newfilename = NULL;
 	newfilename = readline("> ");
 
 	// TODO when does this happen?
@@ -177,8 +177,7 @@ int interactive_rename(const char *ro_oldpath) {
 	// Add path to readline history
 	add_history(newfilename);
 
-	_cleanup_free_ char *newpath =
-	    path_concat(dir_filename.directory, newfilename);
+	newpath = path_concat(dir_filename.directory, newfilename);
 
 	// Do stuff the actual rename
 	ret = rename(oldpath, newpath);
