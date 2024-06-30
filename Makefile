@@ -10,10 +10,10 @@ ALL_TARGETS = ${TARGETS} modnametest
 all: $(TARGETS)
 
 modname: modname.c
-	$(CC) $(CFLAGS) -o $@ $(LDFLAGS) $<
+	$(CC) $(CFLAGS) -o $@ $< $(LDFLAGS)
 
 modnametest: modname.c
-	$(CC) $(CFLAGS) -DTEST -o $@ $(LDFLAGS) $<
+	$(CC) $(CFLAGS) -DTEST -o $@ $< $(LDFLAGS)
 
 %.html: %.md
 	pandoc -s $< > $@
