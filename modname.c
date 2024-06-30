@@ -113,7 +113,7 @@ char *path_concat(const char *a, const char *b) {
 	return buffer;
 }
 
-// Inspired from the systemd codbase.
+// Inspired from the systemd codebase.
 // A 'RAII' demalloc/free for C.
 static inline void freep(void *p) {
 	free(*(void **)p);
@@ -180,7 +180,7 @@ int interactive_rename(const char *ro_oldpath) {
 	_cleanup_free_ char *newpath =
 	    path_concat(dir_filename.directory, newfilename);
 
-	// Do stuff the actuall rename
+	// Do stuff the actual rename
 	ret = rename(oldpath, newpath);
 	if (ret < 0) {
 		fprintf(stderr, "Cannot rename file '%s': %s\n", oldpath,
@@ -222,7 +222,7 @@ int main(int argc, const char **argv) {
 }
 #else
 
-// Self made ad-hoc testing framework. Very limitted.
+// Self made ad-hoc testing framework. Very limited.
 #define ASSERT_STREQ(a, b)                                                     \
 	do {                                                                   \
 		if (strcmp(a, b) != 0) {                                       \
