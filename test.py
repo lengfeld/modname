@@ -214,6 +214,19 @@ class TestModname(TestCaseTempFolder):
             self.assertIn(b"Cannot rename file 'non-existing': No such file or directory",
                           c.readConsole(),)
 
+    def testNewFilenameAlreadyExists(self):
+        touch("file")
+        touch("file-existing")
+        with modname(["file"]) as c:
+            self.assertIn(b"> file", c.readConsole())
+            c.writeConsole(b"-existing\n")  # append "-existing"
+            ret = c.proc.wait()
+            self.assertEqual(ret, 0)
+        # The current behavior is that modname will overwrite the existing
+        # file.
+        self.assertFalse(isfile("file"))
+        self.assertTrue(isfile("file-existing"))
+
 
 if __name__ == '__main__':
     unittest.main()
