@@ -40,6 +40,10 @@ file. Then the console screen may look like
 
 ## How to build
 
+Install dependencies (TODO):
+
+    $ apt install libreadline-dev
+
 Ensure that you have the library and headers for GNU readline installed.
 Then just execute
 
