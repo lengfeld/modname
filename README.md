@@ -71,11 +71,11 @@ Execute
 
 There is a [projects homepage](https://stefan.lengfeld.xyz/projects/modname/).
 
-The source code repo is on [github]. To clone the repo, execute
+The source code repo is on [codeberg]. To clone the repo, execute
 
-    $ git clone https://github.com/lengfeld/modname
+    $ git clone https://codeberg.org/lengfeld/modname
 
-[github]: https://github.com/lengfeld/modname
+[codeberg]: https://codeberg.org/lengfeld/modname
 
 
 ## License
